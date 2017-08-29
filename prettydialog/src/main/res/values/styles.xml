@@ -7,6 +7,14 @@
         <item name="android:windowActionBar">false</item>
     </style>
 
+    <style name="pdlg_default_animation">
+        <item name="android:windowEnterAnimation">@anim/pdlg_anim_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/pdlg_anim_fade_out</item>
+    </style>
 
+    <style name="pdlg_no_animation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
 
 </resources>

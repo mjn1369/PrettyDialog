@@ -48,6 +48,7 @@ public class PrettyDialog extends AppCompatDialog {
         DisplayMetrics displayMetrics = resources.getDisplayMetrics();
         float pxWidth = displayMetrics.widthPixels;
         getWindow().setLayout((int)(pxWidth*0.75),ViewGroup.LayoutParams.WRAP_CONTENT);
+        getWindow().getAttributes().windowAnimations = R.style.pdlg_default_animation;
         thisDialog = this;
         setupViews_Base();
     }
@@ -208,6 +209,16 @@ public class PrettyDialog extends AppCompatDialog {
                     }
                 }
             });
+        }
+        return this;
+    }
+
+    public PrettyDialog setAnimationEnabled(boolean enabled){
+        if (enabled){
+            getWindow().getAttributes().windowAnimations = R.style.pdlg_default_animation;
+        }
+        else {
+            getWindow().getAttributes().windowAnimations = R.style.pdlg_no_animation;
         }
         return this;
     }

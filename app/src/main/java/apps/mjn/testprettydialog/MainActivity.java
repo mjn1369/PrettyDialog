@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTitleColor(R.color.pdlg_color_blue)
                 .setMessage("You can customize icon, buttons, button colors and text colors...")
                 .setMessageColor(R.color.pdlg_color_black)
+                .setAnimationEnabled(false)
                 .setIcon(R.drawable.pdlg_icon_close, R.color.pdlg_color_red, new PrettyDialogCallback() {
                     @Override
                     public void onClick() {
