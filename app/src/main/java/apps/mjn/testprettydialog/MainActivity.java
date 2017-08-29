@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private void setup_titleMessageDialog(){
         final PrettyDialog dialog = new PrettyDialog(this);
         dialog
-                .setTitle("Simple Title")
-                .setMessage("Simple message");
+                .setTitle("PrettyDialog Title")
+                .setMessage("PrettyDialog Message");
         btn_titleMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

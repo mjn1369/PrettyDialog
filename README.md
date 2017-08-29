@@ -25,8 +25,9 @@ dependencies {
 PrettyDialog extends Dialog class, so feel free to use inherited functions.
 ### Simple dialog, nothing fancy:
 ```
-dialog
+new PrettyDialog(this)
 	.setTitle("Simple Title")
 	.setMessage("Simple message")
 	.show();
 ```
+####Output:
