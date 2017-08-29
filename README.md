@@ -32,4 +32,4 @@ new PrettyDialog(this)
 	.show();
 ```
 #### Output:
-![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/simple.png "Simple Dialog, No Customization")
+![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/1.png "Simple Dialog, No Customization")
