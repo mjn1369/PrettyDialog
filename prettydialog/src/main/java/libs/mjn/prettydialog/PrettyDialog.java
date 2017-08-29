@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatDialog;
@@ -34,6 +35,7 @@ public class PrettyDialog extends AppCompatDialog {
     RotateAnimation close_rotation_animation;
     boolean icon_animation = true;
     TextView tv_title, tv_message;
+    Typeface typeface;
     PrettyDialog thisDialog;
     Context context;
 
@@ -111,7 +113,7 @@ public class PrettyDialog extends AppCompatDialog {
     }
 
     public PrettyDialog addButton(String text, Integer textColor, Integer backgroundColor, /*BUTTON_TYPE type,*/ PrettyDialogCallback callback){
-        PrettyDialogButton button = new PrettyDialogButton(context,text, textColor, backgroundColor, /*type,*/ callback);
+        PrettyDialogButton button = new PrettyDialogButton(context,text, textColor, backgroundColor, typeface, /*type,*/ callback);
         int margin = resources.getDimensionPixelSize(R.dimen.pdlg_space_1_0x);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         lp.setMargins(margin, margin, margin, 0);
@@ -210,6 +212,20 @@ public class PrettyDialog extends AppCompatDialog {
                 }
             });
         }
+        return this;
+    }
+
+    public PrettyDialog setTypeface(Typeface tf){
+        typeface = tf;
+        tv_title.setTypeface(tf);
+        tv_message.setTypeface(tf);
+
+        for (int i=0;i<ll_buttons.getChildCount();i++){
+            PrettyDialogButton button = (PrettyDialogButton) ll_buttons.getChildAt(i);
+            button.setTypeface(tf);
+            button.requestLayout();
+        }
+
         return this;
     }
 

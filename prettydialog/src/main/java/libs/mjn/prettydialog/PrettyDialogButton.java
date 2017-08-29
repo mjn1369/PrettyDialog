@@ -3,6 +3,7 @@ package libs.mjn.prettydialog;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.view.LayoutInflater;
@@ -26,12 +27,14 @@ class PrettyDialogButton extends LinearLayout {
     String text;
     TextView tv;
     ImageView iv;
+    Typeface tf;
 
     public PrettyDialogButton(
             Context context,
             String text,
             int textColor,
             int background_color,
+            Typeface tf,
             /*PrettyDialog.BUTTON_TYPE type,*/
             PrettyDialogCallback callback) {
         super(context);
@@ -40,6 +43,7 @@ class PrettyDialogButton extends LinearLayout {
         this.text = text;
         this.text_color = textColor;
         this.background_color = background_color;
+        this.tf = tf;
         /*this.background_type = type;*/
         this.callback = callback;
         init();
@@ -53,6 +57,8 @@ class PrettyDialogButton extends LinearLayout {
         tv = (TextView) findViewById(R.id.tv_button);
         tv.setText(text);
         tv.setTextColor(resources.getColor(text_color==null?default_text_color:text_color));
+        if(tf != null)
+            tv.setTypeface(tf);
         setBackground();
         setOnClickListener(new OnClickListener() {
             @Override
@@ -95,6 +101,11 @@ class PrettyDialogButton extends LinearLayout {
         background_type = type;
         setBackground();
     }*/
+
+    public void setTypeface(Typeface tf){
+        this.tf = tf;
+        tv.setTypeface(tf);
+    }
 
     private void setBackground() {
         setBackgroundDrawable(makeSelector(resources.getColor(background_color==null?default_background_color:background_color)));

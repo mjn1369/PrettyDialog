@@ -1,5 +1,6 @@
 package apps.mjn.testprettydialog;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
@@ -80,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTitleColor(R.color.pdlg_color_blue)
                 .setMessage("You can customize icon, buttons, button colors and text colors...")
                 .setMessageColor(R.color.pdlg_color_black)
+                .setTypeface(Typeface.createFromAsset(getResources().getAssets(),"font.ttf"))
                 .setAnimationEnabled(false)
                 .setIcon(R.drawable.pdlg_icon_close, R.color.pdlg_color_red, new PrettyDialogCallback() {
                     @Override
