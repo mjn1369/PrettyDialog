@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 )
                 .setTitle("Do you agree?")
                 .setTitleColor(R.color.pdlg_color_blue)
+                .setAnimationEnabled(true)
                 .setMessage("By agreeing to our terms and conditions, you agree to our terms and conditions.")
                 .setMessageColor(R.color.pdlg_color_gray)
                 .setTypeface(Typeface.createFromAsset(getResources().getAssets(),"myfont.otf"));
