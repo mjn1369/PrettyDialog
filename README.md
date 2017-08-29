@@ -24,7 +24,7 @@ dependencies {
 ## Usage
 PrettyDialog extends Dialog class, so feel free to use its inherited functions.
 **Note:** Default dialog has no title, message or any buttons. Just a close icon on top which you can dismiss the dialog by clicking on it.
-### Simple Dialog, No Customization:
+#### Simple Dialog, No Customization:
 ```
 new PrettyDialog(this)
 	.setTitle("PrettyDialog Title")
