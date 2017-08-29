@@ -24,7 +24,7 @@ dependencies {
 ## Usage
 PrettyDialog extends Dialog class, so feel free to use its inherited functions.
 **Note:** Default dialog has no title, message or any buttons. Just a close icon on top which you can dismiss the dialog by clicking on it.
-#### Simple Dialog, No Customization:
+### Simple Dialog, No Customization:
 ```
 new PrettyDialog(this)
 	.setTitle("PrettyDialog Title")
@@ -33,7 +33,7 @@ new PrettyDialog(this)
 ```
 #### Output:
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/1.png "Simple Dialog, No Customization")
-#### Change Icon:
+### Change Icon:
 - You can set the dialog icon resource:
 ```
 	...
@@ -43,7 +43,7 @@ new PrettyDialog(this)
 - And set a color tint for it:
 ```
 	...
-	.setIcon(R.drawable.pdlg_icon_info)
+	.setIconTint(R.color.pdlg_color_gray)
 	...
 ```
 - Ultimately, define an OnClickListener callback:
