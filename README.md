@@ -33,3 +33,9 @@ new PrettyDialog(this)
 ```
 #### Output:
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/1.png "Simple Dialog, No Customization")
+#### Change Icon:
+- ```
+	...
+	.setIcon(R.drawable.pdlg_icon_info)
+	...
+```
