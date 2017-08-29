@@ -118,7 +118,7 @@ new PrettyDialog(this)
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/3.png "Added custom buttons")
 ### Custom Title, Message and Typeface:
 
-*Note:* Typeface applies to all texts inside the dialog.
+**Note:** Typeface applies to all texts inside the dialog.
 ```
 ...
 .setTitle("Do you agree?")
@@ -130,3 +130,5 @@ new PrettyDialog(this)
 ```
 ##### Output:
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/4.png "Custom Title, Message and Typeface")
+
+cheers :beers:
