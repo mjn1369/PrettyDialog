@@ -31,7 +31,7 @@ new PrettyDialog(this)
 	.setMessage("PrettyDialog Message")
 	.show();
 ```
-#### Output:
+##### Output:
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/1.png "Simple Dialog, No Customization")
 ### Change Icon:
 - You can set the dialog icon resource:
@@ -50,6 +50,17 @@ new PrettyDialog(this)
 ```
 	...
 	.setIconCallback(new PrettyDialogCallback() {
+                    @Override
+                    public void onClick() {
+                        // Do what you gotta do
+                    }
+                })
+	...
+```
+- Put them all together:
+```
+	...
+	.setIcon(R.drawable.pdlg_icon_info, R.color.pdlg_color_blue, new PrettyDialogCallback() {
                     @Override
                     public void onClick() {
                         // Do what you gotta do
