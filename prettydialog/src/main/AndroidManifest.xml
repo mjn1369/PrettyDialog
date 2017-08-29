@@ -2,8 +2,7 @@
 
     package="libs.mjn.prettydialog">
 
-    <application android:allowBackup="true"
-        android:supportsRtl="true">
+    <application android:allowBackup="true">
 
     </application>
 

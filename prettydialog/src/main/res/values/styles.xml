@@ -1,12 +1,5 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <!-- Customize your theme here. -->
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-    </style>
-
     <style name="pdlg_default_animation">
         <item name="android:windowEnterAnimation">@anim/pdlg_anim_fade_in</item>
         <item name="android:windowExitAnimation">@anim/pdlg_anim_fade_out</item>
