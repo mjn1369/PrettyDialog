@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         dialog
                 .setIcon(
                         R.drawable.pdlg_icon_info,    // Icon resource
-                        R.color.pdlg_color_blue,      // Icon tint
+                        R.color.pdlg_color_green,      // Icon tint
                         new PrettyDialogCallback() {  // Icon OnClick listener
                             @Override
                             public void onClick() {
