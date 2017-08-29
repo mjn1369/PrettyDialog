@@ -39,12 +39,14 @@ new PrettyDialog(this)
 	.setIcon(R.drawable.pdlg_icon_info)
 	...
 ```
-- And set a color tint for it:```
+- And set a color tint for it:
+```
 	...
 	.setIcon(R.drawable.pdlg_icon_info)
 	...
 ```
-- Ultimately, define an OnClickListener callback:```
+- Ultimately, define an OnClickListener callback:
+```
 	...
 	.setIconCallback(new PrettyDialogCallback() {
                     @Override
