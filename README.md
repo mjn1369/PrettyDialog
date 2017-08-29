@@ -70,3 +70,5 @@ new PrettyDialog(this)
 		    }
                 })
 ```
+##### Output:
+![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/2.png "Customize icon")
