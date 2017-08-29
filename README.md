@@ -31,5 +31,44 @@ new PrettyDialog(this)
 	.setMessage("PrettyDialog Message")
 	.show();
 ```
-#### Output:
+##### Output:
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/1.png "Simple Dialog, No Customization")
+### Change Icon:
+- You can set the dialog icon resource:
+```
+	...
+	.setIcon(R.drawable.pdlg_icon_info)
+	...
+```
+- And set a color tint for it:
+```
+	...
+	.setIconTint(R.color.pdlg_color_gray)
+	...
+```
+- Ultimately, define an OnClick callback:
+```
+	...
+	.setIconCallback(new PrettyDialogCallback() {
+                    @Override
+                    public void onClick() {
+                        // Do what you gotta do
+                    }
+                })
+	...
+```
+- Put them all together:
+```
+	...
+	.setIcon(
+		R.drawable.pdlg_icon_info,    // icon resource
+		R.color.pdlg_color_blue,      // icon tint
+		new PrettyDialogCallback() {  // icon OnClick listener
+		    @Override
+		    public void onClick() {
+			// Do what you gotta do
+		    }
+                })
+```
+##### Output:
+![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/2.png "Customize icon")
