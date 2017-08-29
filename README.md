@@ -37,39 +37,40 @@ new PrettyDialog(this)
 ### Change Icon:
 - You can set the dialog icon resource:
 ```
-	...
-	.setIcon(R.drawable.pdlg_icon_info)
-	...
+...
+.setIcon(R.drawable.pdlg_icon_info)
+...
 ```
 - And set a color tint for it:
 ```
-	...
-	.setIconTint(R.color.pdlg_color_green)
-	...
+...
+.setIconTint(R.color.pdlg_color_green)
+...
 ```
 - Ultimately, define an OnClick callback:
 ```
-	...
-	.setIconCallback(new PrettyDialogCallback() {
-                    @Override
-                    public void onClick() {
-                        // Do what you gotta do
-                    }
-                })
-	...
+...
+.setIconCallback(new PrettyDialogCallback() {
+	    @Override
+	    public void onClick() {
+		// Do what you gotta do
+	    }
+	})
+...
 ```
 - Put them all together:
 ```
-	...
-	.setIcon(
-		R.drawable.pdlg_icon_info,     // icon resource
-		R.color.pdlg_color_green,      // icon tint
-		new PrettyDialogCallback() {   // icon OnClick listener
-		    @Override
-		    public void onClick() {
-			// Do what you gotta do
-		    }
-                })
+...
+.setIcon(
+	R.drawable.pdlg_icon_info,     // icon resource
+	R.color.pdlg_color_green,      // icon tint
+	new PrettyDialogCallback() {   // icon OnClick listener
+	    @Override
+	    public void onClick() {
+		// Do what you gotta do
+	    }
+	})
+...
 ```
 ##### Output:
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/2.png "Customize icon")
@@ -77,39 +78,53 @@ new PrettyDialog(this)
 ### Add Buttons:
 - You can add unlimited customized buttons to dialog: 
 ```
-	...
-	// OK button
-	.addButton(
-                        "OK",					// button text
-			R.color.pdlg_color_white,		// button text color
-                        R.color.pdlg_color_green,		// button background color
-                        new PrettyDialogCallback() {		// button OnClick listener
-                            @Override
-                            public void onClick() {
-                                // Do what you gotta do
-                            }
-                        }
-                )
-	// Cancel button
-	.addButton(
-                        "Cancel",
-                        R.color.pdlg_color_white,
-                        R.color.pdlg_color_red,
-                        new PrettyDialogCallback() {
-                            @Override
-                            public void onClick() {
-                                // Dismiss
-                            }
-                        }
-                )
-	// 3rd button
-	.addButton(
-                        "Option 3",
-                        R.color.pdlg_color_black,
-                        R.color.pdlg_color_gray,
-                        null
-                );
-	...
+...
+// OK button
+.addButton(
+		"OK",					// button text
+		R.color.pdlg_color_white,		// button text color
+		R.color.pdlg_color_green,		// button background color
+		new PrettyDialogCallback() {		// button OnClick listener
+		    @Override
+		    public void onClick() {
+			// Do what you gotta do
+		    }
+		}
+	)
+	
+// Cancel button
+.addButton(
+		"Cancel",
+		R.color.pdlg_color_white,
+		R.color.pdlg_color_red,
+		new PrettyDialogCallback() {
+		    @Override
+		    public void onClick() {
+			// Dismiss
+		    }
+		}
+	)
+	
+// 3rd button
+.addButton(
+		"Option 3",
+		R.color.pdlg_color_black,
+		R.color.pdlg_color_gray,
+		null
+	);
+...
 ```
 ##### Output:
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/3.png "Added custom buttons")
+### Custom Title, Message and Typeface:
+
+*Note:* Typeface applies to all texts inside the dialog.
+```
+...
+.setTitle("Do you agree?")
+.setTitleColor(R.color.pdlg_color_blue)
+.setMessage("By agreeing to our terms and conditions, you agree to our terms and conditions.")
+.setMessageColor(R.color.pdlg_color_gray)
+.setTypeface(Typeface.createFromAsset(getResources().getAssets(),"myfont.otf"))
+...
+```
