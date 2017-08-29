@@ -23,6 +23,7 @@ dependencies {
 ```
 ## Usage
 PrettyDialog extends Dialog class, so feel free to use its inherited functions.
+
 **Note:** Default dialog has no title, message or any buttons. Just a close icon on top which you can dismiss the dialog by clicking on it.
 ### Simple Dialog, No Customization:
 ```
@@ -61,14 +62,54 @@ new PrettyDialog(this)
 ```
 	...
 	.setIcon(
-		R.drawable.pdlg_icon_info,    // icon resource
+		R.drawable.pdlg_icon_info,     // icon resource
 		R.color.pdlg_color_green,      // icon tint
-		new PrettyDialogCallback() {  // icon OnClick listener
+		new PrettyDialogCallback() {   // icon OnClick listener
 		    @Override
 		    public void onClick() {
 			// Do what you gotta do
 		    }
                 })
+```
+##### Output:
+![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/2.png "Customize icon")
+
+### Add Buttons:
+- You can add unlimited customized buttons to dialog: 
+```
+	...
+	// OK button
+	.addButton(
+                        "OK",					// button text
+			R.color.pdlg_color_white,		// button text color
+                        R.color.pdlg_color_green,		// button background color
+                        new PrettyDialogCallback() {		// button OnClick listener
+                            @Override
+                            public void onClick() {
+                                // Do what you gotta do
+                            }
+                        }
+                )
+	// Cancel button
+	.addButton(
+                        "Cancel",
+                        R.color.pdlg_color_white,
+                        R.color.pdlg_color_red,
+                        new PrettyDialogCallback() {
+                            @Override
+                            public void onClick() {
+                                // Dismiss
+                            }
+                        }
+                )
+	// 3rd button
+	.addButton(
+                        "Option 3",
+                        R.color.pdlg_color_black,
+                        R.color.pdlg_color_gray,
+                        null
+                );
+	...
 ```
 ##### Output:
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/2.png "Customize icon")
