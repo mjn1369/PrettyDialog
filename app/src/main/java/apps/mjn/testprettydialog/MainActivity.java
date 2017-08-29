@@ -36,6 +36,15 @@ public class MainActivity extends AppCompatActivity {
     private void setup_titleMessageDialog(){
         final PrettyDialog dialog = new PrettyDialog(this);
         dialog
+                .setIcon(
+                        R.drawable.pdlg_icon_info,    // Icon resource
+                        R.color.pdlg_color_blue,      // Icon tint
+                        new PrettyDialogCallback() {  // Icon OnClick listener
+                            @Override
+                            public void onClick() {
+                                // Do what you gotta do
+                            }
+                })
                 .setTitle("PrettyDialog Title")
                 .setMessage("PrettyDialog Message");
         btn_titleMessage.setOnClickListener(new View.OnClickListener() {
