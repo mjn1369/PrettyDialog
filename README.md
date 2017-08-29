@@ -128,3 +128,5 @@ new PrettyDialog(this)
 .setTypeface(Typeface.createFromAsset(getResources().getAssets(),"myfont.otf"))
 ...
 ```
+##### Output:
+![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/4.png "Custom Title, Message and Typeface")
