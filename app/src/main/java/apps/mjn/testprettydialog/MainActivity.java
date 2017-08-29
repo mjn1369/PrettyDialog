@@ -46,7 +46,40 @@ public class MainActivity extends AppCompatActivity {
                             }
                 })
                 .setTitle("PrettyDialog Title")
-                .setMessage("PrettyDialog Message");
+                .setMessage("PrettyDialog Message")
+                .addButton(
+                        "OK",
+                        R.color.pdlg_color_white,
+                        R.color.pdlg_color_green,
+                        new PrettyDialogCallback() {
+                            @Override
+                            public void onClick() {
+                                // Do what you gotta do
+                            }
+                        }
+                )
+                .addButton(
+                        "Cancel",
+                        R.color.pdlg_color_white,
+                        R.color.pdlg_color_red,
+                        new PrettyDialogCallback() {
+                            @Override
+                            public void onClick() {
+                                // Dismiss
+                            }
+                        }
+                )
+                .addButton(
+                        "Option 3",
+                        R.color.pdlg_color_black,
+                        R.color.pdlg_color_gray,
+                        new PrettyDialogCallback() {
+                            @Override
+                            public void onClick() {
+                                Toast.makeText(MainActivity.this, "I Do Nothing :)", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                );
         btn_titleMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
