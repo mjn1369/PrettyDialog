@@ -31,5 +31,5 @@ new PrettyDialog(this)
 	.setMessage("PrettyDialog Message")
 	.show();
 ```
-####Output:
+#### Output:
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/simple.png "Simple Dialog, No Customization")
