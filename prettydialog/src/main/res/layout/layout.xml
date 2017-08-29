@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/pdlg_space_1.0x"
+    android:layout_marginTop="@dimen/pdlg_space_1.0x">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_dialog"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/pdlg_space_1.0x"
+            android:paddingRight="@dimen/pdlg_space_1.0x"
+            android:paddingTop="@dimen/pdlg_space_1.0x"
+            android:textColor="@color/pdlg_black"
+            android:textSize="@dimen/pdlg_tv_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/pdlg_space_1.0x"
+            android:textColor="@color/pdlg_black"
+            android:textSize="@dimen/pdlg_tv_message" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/background_dialog_icon"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/pdlg_icon_size"
+            android:layout_height="@dimen/pdlg_icon_size"
+            android:layout_margin="@dimen/pdlg_border_size"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+</FrameLayout>

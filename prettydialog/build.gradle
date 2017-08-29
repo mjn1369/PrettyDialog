@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.mjn1369'
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'pretty-dialog'
+
+    publishedGroupId = 'libs.mjn.prettydialog'
+    libraryName = 'PrettyDialog'
+
+    libraryDescription = 'PrettyDialog is a customizable equivalent of SCLAlertView in iOS.'
+
+    siteUrl = 'https://github.com/mjn1369/PrettyDialog'
+    gitUrl = 'https://github.com/mjn1369/PrettyDialog.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'mjn1369'
+    developerName = 'Mahmoud Jafarinejad'
+    developerEmail = 'mjn1369@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:25.1.0'
+}

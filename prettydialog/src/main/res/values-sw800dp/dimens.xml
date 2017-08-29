@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ICON -->
+    <dimen name="pdlg_icon_size">48dp</dimen>
+    <dimen name="pdlg_border_size">4dp</dimen>
+
+    <!-- DIALOG -->
+    <dimen name="pdlg_corner_radius">16dp</dimen>
+
+    <!-- TEXTS -->
+    <dimen name="pdlg_tv_title">36sp</dimen>
+    <dimen name="pdlg_tv_message">32sp</dimen>
+
+    <!-- BUTTON -->
+    <dimen name="pdlg_button_stroke">2dp</dimen>
+
+    <!-- SPACING -->
+    <dimen name="pdlg_space_1.0x">24dp</dimen>
+
+</resources>
