@@ -21,8 +21,8 @@ class PrettyDialogButton extends LinearLayout {
     Resources resources;
     PrettyDialogCallback callback;
     /*PrettyDialog.BUTTON_TYPE background_type = PrettyDialog.BUTTON_TYPE.BORDER;*/
-    Integer default_background_color = R.color.pdlg_blue, background_color;
-    Integer default_text_color = R.color.pdlg_white, text_color;
+    Integer default_background_color = R.color.pdlg_color_blue, background_color;
+    Integer default_text_color = R.color.pdlg_color_white, text_color;
     String text;
     TextView tv;
     ImageView iv;

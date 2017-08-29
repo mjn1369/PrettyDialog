@@ -27,7 +27,7 @@ import android.widget.TextView;
 public class PrettyDialog extends AppCompatDialog {
 
     /*public enum BUTTON_TYPE{FILL,BORDER}*/
-    Integer default_icon_tint = R.color.pdlg_blue;
+    Integer default_icon_tint = R.color.pdlg_color_blue;
     Resources resources;
     LinearLayout ll_content, ll_buttons;
     ImageView iv_icon;
@@ -131,7 +131,7 @@ public class PrettyDialog extends AppCompatDialog {
     }
 
     public PrettyDialog setTitleColor(Integer color){
-        tv_title.setTextColor(ContextCompat.getColor(context,color==null?R.color.pdlg_black : color));
+        tv_title.setTextColor(ContextCompat.getColor(context,color==null?R.color.pdlg_color_black : color));
         return this;
     }
 
@@ -147,12 +147,12 @@ public class PrettyDialog extends AppCompatDialog {
     }
 
     public PrettyDialog setMessageColor(Integer color){
-        tv_message.setTextColor(ContextCompat.getColor(context,color==null?R.color.pdlg_black :color));
+        tv_message.setTextColor(ContextCompat.getColor(context,color==null?R.color.pdlg_color_black :color));
         return this;
     }
 
     public PrettyDialog setIcon(Integer icon){
-        iv_icon.setImageResource(icon==null?R.drawable.ic_close:icon);
+        iv_icon.setImageResource(icon==null?R.drawable.pdlg_icon_close :icon);
         icon_animation = false;
         iv_icon.setOnTouchListener(null);
         return this;
@@ -188,7 +188,7 @@ public class PrettyDialog extends AppCompatDialog {
 
     public PrettyDialog setIcon(Integer icon, Integer iconTint, final PrettyDialogCallback callback){
         icon_animation = false;
-        iv_icon.setImageResource(icon==null?R.drawable.ic_close:icon);
+        iv_icon.setImageResource(icon==null?R.drawable.pdlg_icon_close :icon);
         iv_icon.setColorFilter(ContextCompat.getColor(context,iconTint==null?default_icon_tint:iconTint), PorterDuff.Mode.MULTIPLY);
         iv_icon.setOnTouchListener(null);
         if (callback != null) {

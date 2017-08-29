@@ -4,11 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/pdlg_space_1.0x"
     tools:context="apps.mjn.testprettydialog.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_titleMessage"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
+        android:background="@color/pdlg_color_blue"
+        android:text="Simple Title/Message"
+        android:textColor="@color/pdlg_color_white"
+        android:textAllCaps="false"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_okCancel"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/pdlg_space_1.0x"
+        android:layout_height="wrap_content"
+        android:text="OK/Cancel Dialog"
+        android:textColor="@color/pdlg_color_white"
+        android:background="@color/pdlg_color_red"
+        android:textAllCaps="false"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_allCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pdlg_space_1.0x"
+        android:background="@color/pdlg_color_green"
+        android:textColor="@color/pdlg_color_white"
+        android:text="All Custom"
+        android:textAllCaps="false"/>
 </LinearLayout>
