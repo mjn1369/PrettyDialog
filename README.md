@@ -43,7 +43,7 @@ new PrettyDialog(this)
 - And set a color tint for it:
 ```
 	...
-	.setIconTint(R.color.pdlg_color_gray)
+	.setIconTint(R.color.pdlg_color_green)
 	...
 ```
 - Ultimately, define an OnClick callback:
@@ -62,7 +62,7 @@ new PrettyDialog(this)
 	...
 	.setIcon(
 		R.drawable.pdlg_icon_info,    // icon resource
-		R.color.pdlg_color_blue,      // icon tint
+		R.color.pdlg_color_green,      // icon tint
 		new PrettyDialogCallback() {  // icon OnClick listener
 		    @Override
 		    public void onClick() {
