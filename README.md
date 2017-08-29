@@ -2,7 +2,6 @@
 PrettyDialog is a customizable equivalent of SCLAlertView in iOS.
 
 Example is available in app module.
-
 ## Download
 ### Gradle:
 Add the following to your project level build.gradle:
@@ -23,3 +22,11 @@ dependencies {
 }
 ```
 ## Usage
+PrettyDialog extends Dialog class, so feel free to use inherited functions.
+### Simple dialog, nothing fancy:
+```
+dialog
+	.setTitle("Simple Title")
+	.setMessage("Simple message")
+	.show();
+```
