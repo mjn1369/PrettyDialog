@@ -79,7 +79,12 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "I Do Nothing :)", Toast.LENGTH_SHORT).show();
                             }
                         }
-                );
+                )
+                .setTitle("Do you agree?")
+                .setTitleColor(R.color.pdlg_color_blue)
+                .setMessage("By agreeing to our terms and conditions, you agree to our terms and conditions.")
+                .setMessageColor(R.color.pdlg_color_gray)
+                .setTypeface(Typeface.createFromAsset(getResources().getAssets(),"myfont.otf"));
         btn_titleMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTitleColor(R.color.pdlg_color_blue)
                 .setMessage("You can customize icon, buttons, button colors and text colors...")
                 .setMessageColor(R.color.pdlg_color_black)
-                .setTypeface(Typeface.createFromAsset(getResources().getAssets(),"font.ttf"))
+                .setTypeface(Typeface.createFromAsset(getResources().getAssets(),"myfont.otf"))
                 .setAnimationEnabled(false)
                 .setIcon(R.drawable.pdlg_icon_close, R.color.pdlg_color_red, new PrettyDialogCallback() {
                     @Override
