@@ -22,12 +22,14 @@ dependencies {
 }
 ```
 ## Usage
-PrettyDialog extends Dialog class, so feel free to use inherited functions.
-### Simple dialog, nothing fancy:
+PrettyDialog extends Dialog class, so feel free to use its inherited functions.
+Note: Default dialog has no title, message or any buttons. Just a close icon on top which you can dismiss the dialog by clicking on it.
+### Simple Dialog, No Customization:
 ```
 new PrettyDialog(this)
-	.setTitle("Simple Title")
-	.setMessage("Simple message")
+	.setTitle("PrettyDialog Title")
+	.setMessage("PrettyDialog Message")
 	.show();
 ```
 ####Output:
+![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/simple.png "Simple Dialog, No Customization")
