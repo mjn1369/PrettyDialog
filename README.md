@@ -139,7 +139,7 @@ new PrettyDialog(this)
 ```
 cheers :beers:
 
- # License
+## License
  
  ```
 Copyright 2017 mjn1369
