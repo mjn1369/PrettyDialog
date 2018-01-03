@@ -143,12 +143,15 @@ new PrettyDialog(this)
  |            Functions            |            Description            |            Default            |
  | ------------------------------- | -------------------------------   | --------------------------    |
  | setTitle()                      | sets a title for dialog           |  ""                           |
+ | setTitleColor()                 | sets title's color                |  #212121 (kinda black)        |
  | setMessage()                    | sets a message for dialog         |  ""                           |
+ | setMessageColor()               | sets message's color              |  #212121 (kinda black)        |
  | setIcon()                       | sets the dialog's icon            |  "close (X)" icon             |
  | setIconTint()                   | sets tint for dialog's icon       |  #1976D2 (kinda blue)         |
- | setIconCallback()               | set dialog's icon callback        |  dismiss dialog               |
- | setIcon()                       | set icon,icon tint,icon callback  |                               |
+ | setIconCallback()               | sets dialog's icon callback       |  dismiss dialog               |
+ | setIcon()                       | sets icon,icon tint,icon callback |                               |
  | addButton()                     | adds button with text,text color,background color and callback|   |
+ | setTypeface()                   | sets typeface for all texts       |                               |
 
 cheers :beers:
 
