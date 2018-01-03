@@ -1,5 +1,5 @@
 # PrettyDialog
-PrettyDialog is a customizable equivalent of SCLAlertView in iOS.
+PrettyDialog is a customizable equivalent of SCLAlertView in iOS for Android.
 
 Example is available in app module.
 ## Download
