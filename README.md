@@ -149,8 +149,8 @@ new PrettyDialog(this)
  | setIconCallback()               | set dialog's icon callback        |  dismiss dialog               |
  | setIcon()                       | set icon,icon tint,icon callback  |                               |
  | addButton()                     | adds button with text,	       | 			       |
- |			           | text color, background color,     |			       |
- |				   | callback                          |			       |
+ |			             text color, background color,     			               |
+ |				     callback                          			               |
 
 cheers :beers:
 
