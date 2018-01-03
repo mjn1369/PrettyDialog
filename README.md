@@ -138,6 +138,10 @@ new PrettyDialog(this)
 
 ```
 cheers :beers:
+
+ # License
+ 
+ ```
 Copyright 2017 mjn1369
 
 Licensed under the Apache License, Version 2.0 (the "License");
