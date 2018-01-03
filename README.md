@@ -148,9 +148,9 @@ new PrettyDialog(this)
  | setIconTint()                   | sets tint for dialog's icon       |  #1976D2 (kinda blue)         |
  | setIconCallback()               | set dialog's icon callback        |  dismiss dialog               |
  | setIcon()                       | set icon,icon tint,icon callback  |                               |
- | addButton()                     | adds button with text,	        			       |
- |			           | text color, background color,     			               |
- |				   | callback                          |			       |
+ | addButton()                       adds button with text,	        			       |
+ |			             text color, background color,     			               |
+ |				     callback                           			       |
 
 cheers :beers:
 
