@@ -1,7 +1,10 @@
 [ProjectGithubUrl]:     https://github.com/mjn1369/prettydialog
 [PlatformBadge]:  https://img.shields.io/badge/Platform-Android-blue.svg
+[ApiBadge]:       https://img.shields.io/badge/API-10%2B-blue.svg
 # PrettyDialog
 [![Platform][PlatformBadge]][ProjectGithubUrl]
+[![Api][ApiBadge]][ProjectGithubUrl]
+
 PrettyDialog is an Android Dialog library which is the customizable equivalent of SCLAlertView in iOS.
 
 Example is available in app module.
