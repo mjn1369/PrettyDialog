@@ -152,6 +152,7 @@ new PrettyDialog(this)
  | setIcon()                       | sets icon,icon tint,icon callback |                               |
  | addButton()                     | adds button with text,text color,background color and callback|   |
  | setTypeface()                   | sets typeface for all texts       |                               |
+ | setAnimationEnabled()           | enables of disables dialog animation| Enabled                     |
 
 cheers :beers:
 
