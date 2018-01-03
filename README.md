@@ -12,7 +12,7 @@
 [![Api][ApiBadge]][ProjectGithubUrl]
 [![License][LicenseBadge]][ProjectLicenceUrl]
 [![JitpackBadge]][JitpackUrl]
-[![AndroidArsenalBadge]][AndroidArsenalBadge]
+[![AndroidArsenalBadge]][AndroidArsenalUrl]
 
 PrettyDialog is an Android Dialog library which is the customizable equivalent of SCLAlertView in iOS.
 
