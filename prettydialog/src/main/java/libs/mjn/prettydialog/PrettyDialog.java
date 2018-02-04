@@ -9,6 +9,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatDialog;
 import android.util.DisplayMetrics;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -110,6 +111,11 @@ public class PrettyDialog extends AppCompatDialog {
         tv_title.setVisibility(View.GONE);
         tv_message = (TextView) findViewById(R.id.tv_message);
         tv_message.setVisibility(View.GONE);
+    }
+
+    public PrettyDialog setGravity(int gravity){
+        getWindow().setGravity(gravity);
+        return this;
     }
 
     public PrettyDialog addButton(String text, Integer textColor, Integer backgroundColor, /*BUTTON_TYPE type,*/ PrettyDialogCallback callback){
