@@ -186,6 +186,7 @@ new PrettyDialog(this)
 ## Changelog
 v1.0.2:
 - More Compatible setTint() method
+
 v1.0.1:
 - Added "setGravity(int gravity)" method
 
