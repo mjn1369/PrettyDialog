@@ -33,7 +33,7 @@ Add this to your app build.gradle:
 
 ```
 dependencies {
-   compile 'com.github.mjn1369:prettydialog:1.0.0'
+   compile 'com.github.mjn1369:prettydialog:1.0.1'
 }
 ```
 
@@ -160,6 +160,12 @@ new PrettyDialog(this)
 .setAnimationEnabled(true)
 ```
 
+- Set dialog gravity:
+
+```
+.setGravity(Gravity.BOTTOM)
+```
+
 ## Functions
 
  |            Functions            |            Description            |            Default            |
@@ -175,6 +181,11 @@ new PrettyDialog(this)
  | addButton(String,int,int,PrettyDialogCallback)                   | adds button with text,text color,background color and callback|   |
  | setTypeface(Typeface)                  | sets typeface for all texts       |                               |
  | setAnimationEnabled(boolean)       | enables or disables dialog animation| Enabled                     |
+ | setGravity(int)       | sets the dialog's gravity (TOP, BOTTOM, CENTER,...)| Gravity.CENTER                     |
+
+## Changelog
+v1.0.1:
+- Added "setGravity(int gravity)" method
 
 cheers :beers:
 
