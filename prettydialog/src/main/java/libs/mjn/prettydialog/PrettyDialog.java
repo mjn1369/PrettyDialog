@@ -140,7 +140,8 @@ public class PrettyDialog extends AppCompatDialog {
     }
 
     public PrettyDialog setTitleColor(Integer color){
-        tv_title.setTextColor(ContextCompat.getColor(context,color==null?R.color.pdlg_color_black : color));
+        //tv_title.setTextColor(ContextCompat.getColor(context,color==null?R.color.pdlg_color_black : color));
+        tv_title.setTextColor(context.getResources().getColor(color==null?R.color.pdlg_color_black : color));
         return this;
     }
 
@@ -156,7 +157,8 @@ public class PrettyDialog extends AppCompatDialog {
     }
 
     public PrettyDialog setMessageColor(Integer color){
-        tv_message.setTextColor(ContextCompat.getColor(context,color==null?R.color.pdlg_color_black :color));
+        //tv_message.setTextColor(ContextCompat.getColor(context,color==null?R.color.pdlg_color_black :color));
+        tv_message.setTextColor(context.getResources().getColor(color==null?R.color.pdlg_color_black :color));
         return this;
     }
 
@@ -168,7 +170,8 @@ public class PrettyDialog extends AppCompatDialog {
     }
 
     public PrettyDialog setIconTint(Integer color){
-        iv_icon.setColorFilter(ContextCompat.getColor(context,color==null?default_icon_tint:color), PorterDuff.Mode.MULTIPLY);
+        //iv_icon.setColorFilter(ContextCompat.getColor(context,color==null?default_icon_tint:color), PorterDuff.Mode.MULTIPLY);
+        iv_icon.setColorFilter(context.getResources().getColor(color==null?default_icon_tint:color), PorterDuff.Mode.MULTIPLY);
         return this;
     }
 
@@ -198,7 +201,8 @@ public class PrettyDialog extends AppCompatDialog {
     public PrettyDialog setIcon(Integer icon, Integer iconTint, final PrettyDialogCallback callback){
         icon_animation = false;
         iv_icon.setImageResource(icon==null?R.drawable.pdlg_icon_close :icon);
-        iv_icon.setColorFilter(ContextCompat.getColor(context,iconTint==null?default_icon_tint:iconTint), PorterDuff.Mode.MULTIPLY);
+        //iv_icon.setColorFilter(ContextCompat.getColor(context,iconTint==null?default_icon_tint:iconTint), PorterDuff.Mode.MULTIPLY);
+        iv_icon.setColorFilter(context.getResources().getColor(iconTint==null?default_icon_tint:iconTint), PorterDuff.Mode.MULTIPLY);
         iv_icon.setOnTouchListener(null);
         if (callback != null) {
             iv_icon.setOnTouchListener(new View.OnTouchListener() {

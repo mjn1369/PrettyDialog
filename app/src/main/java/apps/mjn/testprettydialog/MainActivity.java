@@ -34,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setup_titleMessageDialog(){
-        final PrettyDialog dialog = new PrettyDialog(this);
-        dialog
+        final PrettyDialog dialog = new PrettyDialog(this)
                 .setIcon(
                         R.drawable.pdlg_icon_info,    // Icon resource
                         R.color.pdlg_color_green,      // Icon tint
@@ -77,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick() {
                                 Toast.makeText(MainActivity.this, "I Do Nothing :)", Toast.LENGTH_SHORT).show();
+                                
                             }
                         }
                 )
