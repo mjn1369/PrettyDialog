@@ -138,7 +138,26 @@ new PrettyDialog(this)
 
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/3.png "Added custom buttons")
 
-**Note:** To Dismiss PrettyDialog on a button click, you have to instantiate PrettyDialog and keep the variable, then call dismiss() on the variable inside button's onClickListener method. 
+**Note:** To Dismiss PrettyDialog on a button click, you have to instantiate PrettyDialog and keep the variable, then call dismiss() on the variable inside button's onClickListener method:
+
+```
+PrettyDialog pDialog = new PrettyDialog(this);
+	pDialog
+	.setTitle("PrettyDialog Title")
+	.setMessage("PrettyDialog Message")
+	.addButton(
+		"Cancel",
+		R.color.pdlg_color_white,
+		R.color.pdlg_color_red,
+		new PrettyDialogCallback() {
+		    @Override
+		    public void onClick() {
+			pDialog.dismiss();
+		    }
+		}
+	)
+	.show();
+```
 
 ### Custom Title, Message and Typeface:
 
