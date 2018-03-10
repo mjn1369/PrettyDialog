@@ -138,6 +138,8 @@ new PrettyDialog(this)
 
 ![alt text](https://github.com/mjn1369/PrettyDialog/blob/master/Screenshots/3.png "Added custom buttons")
 
+**Note:** To Dismiss PrettyDialog on a button click, you have to instantiate PrettyDialog and keep the variable, then call dismiss() on the variable inside button's onClickListener method. 
+
 ### Custom Title, Message and Typeface:
 
 **Note:** Typeface applies to all texts inside the dialog.
