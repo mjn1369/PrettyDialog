@@ -52,7 +52,7 @@ class PrettyDialogButton extends LinearLayout {
     private void init() {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (inflater != null) {
-            inflater.inflate(R.layout.button, this);
+            inflater.inflate(R.layout.pdlg_button, this);
         }
         tv = (TextView) findViewById(R.id.tv_button);
         tv.setText(text);

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/pdlg_space_1.0x"
-    android:layout_marginTop="@dimen/pdlg_space_1.0x">
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/pdlg_space_1.0x"
+             android:layout_marginTop="@dimen/pdlg_space_1.0x">
 
     <LinearLayout
         android:id="@+id/ll_content"
@@ -22,16 +22,7 @@
             android:paddingTop="@dimen/pdlg_space_1.0x"
             android:textColor="@color/pdlg_color_black"
             android:textSize="@dimen/pdlg_tv_title"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tv_message"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="@dimen/pdlg_space_1.0x"
-            android:textColor="@color/pdlg_color_black"
-            android:textSize="@dimen/pdlg_tv_message" />
+            android:textStyle="bold"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -41,10 +32,27 @@
             android:scrollbars="vertical">
 
             <LinearLayout
-                android:id="@+id/ll_buttons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/pdlg_space_1.0x"
+                    android:textColor="@color/pdlg_color_black"
+                    android:textSize="@dimen/pdlg_tv_message"/>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+            </LinearLayout>
         </ScrollView>
 
     </LinearLayout>
