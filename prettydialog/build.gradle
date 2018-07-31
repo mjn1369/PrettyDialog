@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/mjn1369/PrettyDialog'
     gitUrl = 'https://github.com/mjn1369/PrettyDialog.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.3'
 
     developerId = 'mjn1369'
     developerName = 'Mahmoud Jafarinejad'
@@ -32,8 +32,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 3
+        versionName "1.0.3"
     }
 }
 
