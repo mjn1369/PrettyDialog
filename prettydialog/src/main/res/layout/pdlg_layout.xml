@@ -65,7 +65,7 @@
         android:background="@drawable/background_dialog_icon"
         android:orientation="vertical">
 
-        <ImageView
+        <view class="libs.mjn.prettydialog.PrettyDialog$PrettyDialogCircularImageView"
             android:id="@+id/iv_icon"
             android:layout_width="@dimen/pdlg_icon_size"
             android:layout_height="@dimen/pdlg_icon_size"
