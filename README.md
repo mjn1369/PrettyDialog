@@ -33,7 +33,7 @@ Add this to your app build.gradle:
 
 ```
 dependencies {
-   compile 'com.github.mjn1369:prettydialog:1.0.3'
+   compile 'com.github.mjn1369:prettydialog:1.0.4'
 }
 ```
 
@@ -205,6 +205,9 @@ PrettyDialog pDialog = new PrettyDialog(this);
  | setGravity(int)       | sets the dialog's gravity (TOP, BOTTOM, CENTER,...)| Gravity.CENTER                     |
 
 ## Changelog
+v1.0.4:
+- Removed default icon tint color
+
 v1.0.3:
 - Added higher level scrollable content to include long messages
 
