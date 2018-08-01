@@ -169,7 +169,11 @@ public class PrettyDialog extends AppCompatDialog {
 
     public PrettyDialog setIconTint(Integer color){
         //iv_icon.setColorFilter(ContextCompat.getColor(context,color==null?default_icon_tint:color), PorterDuff.Mode.MULTIPLY);
-        iv_icon.setColorFilter(context.getResources().getColor(color==null?default_icon_tint:color), PorterDuff.Mode.MULTIPLY);
+        if(color==null){
+            iv_icon.setColorFilter(null);
+        }
+        else
+            iv_icon.setColorFilter(context.getResources().getColor(color), PorterDuff.Mode.MULTIPLY);
         return this;
     }
 
@@ -200,7 +204,11 @@ public class PrettyDialog extends AppCompatDialog {
         icon_animation = false;
         iv_icon.setImageResource(icon==null?R.drawable.pdlg_icon_close :icon);
         //iv_icon.setColorFilter(ContextCompat.getColor(context,iconTint==null?default_icon_tint:iconTint), PorterDuff.Mode.MULTIPLY);
-        iv_icon.setColorFilter(context.getResources().getColor(iconTint==null?default_icon_tint:iconTint), PorterDuff.Mode.MULTIPLY);
+        if(iconTint==null) {
+            iv_icon.setColorFilter(null);
+        }
+        else
+            iv_icon.setColorFilter(context.getResources().getColor(iconTint), PorterDuff.Mode.MULTIPLY);
         iv_icon.setOnTouchListener(null);
         if (callback != null) {
             iv_icon.setOnTouchListener(new View.OnTouchListener() {

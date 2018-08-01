@@ -70,7 +70,6 @@
             android:layout_width="@dimen/pdlg_icon_size"
             android:layout_height="@dimen/pdlg_icon_size"
             android:layout_margin="@dimen/pdlg_border_size"
-            android:src="@drawable/pdlg_icon_close"
-            android:tint="@color/pdlg_color_blue"/>
+            android:src="@drawable/pdlg_icon_close"/>
     </LinearLayout>
 </FrameLayout>
